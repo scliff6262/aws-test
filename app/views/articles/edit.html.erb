@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <%= form_for @article do |f| %>
+      <%= f.label :title %>:
+      <%= f.text_field :title %><br />
+
+      <%= f.label :author %>:
+      <%= f.text_field :author %><br />
+
+      <%= f.label :content%>
+      <%= f.text_area :content%><br />
+
+      <%=f.label :short_description%>
+      <%=f.text_field :short_description%><br />
+
+      <%=f.label :caption%>
+      <%=f.text_field :caption%><br />
+
+
+      <%= f.submit %>
+    <% end %>
+  </body>
+</html>
